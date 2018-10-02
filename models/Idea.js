@@ -1,16 +1,16 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-//
+// Create Schema
 
-const IdeaSchema = new Schema({
+const IdeaSchema = new Schema ({
     title: {
         type: String,
         required: true
     },
     details: {
-        type: String, 
-        default: true
+        type: String,
+        required: true
     },
     date: {
         type: Date,
